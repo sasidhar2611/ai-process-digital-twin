@@ -6,6 +6,10 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 5.3
+- Evaluated queue congestions driving the 3.20% carrier completion anomaly. Decided to classify these as EXPECTED_MODEL_VARIATION rather than artificially tuning the model, preserving realistic capacity constraints.
+- Validated processing time correlation with physical complexities (e.g. Volume to Picking = 0.58).
+
 ## Module 5.2
 - Generated synthetic warehouse operational dataset strictly tracing real `order_id`s, without fabricating missing physical attributes.
 - Adopted sequential event-based loop to schedule workers and track queue lengths dynamically at arrival time, respecting a strict 08:00 - 18:00 operating shift.
