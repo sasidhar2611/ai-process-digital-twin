@@ -6,6 +6,10 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 5.5
+- Formalized KPI definitions including a configurable SLA assumption (5 Days) to measure operational adherence.
+- Evaluated bottleneck metrics theoretically across the baseline simulation, identifying DISPATCH as the highest utilized stage (31.15%) though heavily constrained overall by shift-wait dynamics.
+
 ## Module 5.4
 - Designed deterministic scenario configuration framework, strictly separating definition from execution.
 - Adopted One-Factor-At-A-Time (OFAT) experimental methodology supported by a Common Random Seed Strategy.
