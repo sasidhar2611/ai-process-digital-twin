@@ -39,3 +39,4 @@ class SyntheticModelConfiguration:
     
     worker_config: WorkerConfiguration = field(default_factory=WorkerConfiguration)
     queue_policy: str = "FIFO"
+    productivity_factor: float = 1.0

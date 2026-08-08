@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 5.4
+- Designed deterministic scenario configuration framework, strictly separating definition from execution.
+- Adopted One-Factor-At-A-Time (OFAT) experimental methodology supported by a Common Random Seed Strategy.
+- Serialized 6 initial experimental definitions to JSON (baseline, dispatch_plus_1, picking_plus_5, packing_plus_2, productivity_plus_10, extended_shift).
+
 ## Module 5.3
 - Evaluated queue congestions driving the 3.20% carrier completion anomaly. Decided to classify these as EXPECTED_MODEL_VARIATION rather than artificially tuning the model, preserving realistic capacity constraints.
 - Validated processing time correlation with physical complexities (e.g. Volume to Picking = 0.58).
