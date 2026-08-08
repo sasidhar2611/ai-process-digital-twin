@@ -9,3 +9,4 @@
 - Implemented Module 4.2 Column Naming & Data Type Standardization. Standardized dtypes (string/float64/datetime64) across datasets and enforced snake_case.
 - Implemented Module 4.3 Timestamp Validation. Developed a validation layer to evaluate missingness and temporal anomalies across the Olist lifecycle.
 - Implemented Module 4.4 Missing-Value Analysis & Treatment. Classified missing records by intent and established explicit RETAIN_AS_NULL and EXCLUDE policies without fabricating operational realities.
+- Implemented Module 4.5 Duplicate & Key Validation. Identified primary keys, composite keys, and structural repetition in the Olist dataset without destructive deduplication.

@@ -1,0 +1,268 @@
+{
+  "customers": {
+    "full_row_duplicates": {
+      "total_rows": 99441,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "customer_id"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 99441,
+        "unique_count": 99441,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "UNIQUE"
+      },
+      {
+        "key": [
+          "customer_unique_id"
+        ],
+        "expected_uniqueness": "EXPECTED_REPEAT",
+        "total_valid_keys": 99441,
+        "unique_count": 96096,
+        "duplicate_count": 3345,
+        "duplicate_percentage": 3.3638036624732255,
+        "max_frequency": 17,
+        "classification": "EXPECTED_REPEAT"
+      }
+    ]
+  },
+  "orders": {
+    "full_row_duplicates": {
+      "total_rows": 99441,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "order_id"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 99441,
+        "unique_count": 99441,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "UNIQUE"
+      },
+      {
+        "key": [
+          "customer_id"
+        ],
+        "expected_uniqueness": "EXPECTED_REPEAT",
+        "total_valid_keys": 99441,
+        "unique_count": 99441,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "EXPECTED_REPEAT"
+      }
+    ]
+  },
+  "order_items": {
+    "full_row_duplicates": {
+      "total_rows": 112650,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "order_id",
+          "order_item_id"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 112650,
+        "unique_count": 112650,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "COMPOSITE_KEY_VALID"
+      },
+      {
+        "key": [
+          "order_id"
+        ],
+        "expected_uniqueness": "EXPECTED_REPEAT",
+        "total_valid_keys": 112650,
+        "unique_count": 98666,
+        "duplicate_count": 13984,
+        "duplicate_percentage": 12.413670661340435,
+        "max_frequency": 21,
+        "classification": "EXPECTED_REPEAT"
+      }
+    ],
+    "custom_analysis": {
+      "unique_orders": 98666,
+      "total_items": 112650,
+      "max_item_id_overall": 21,
+      "min_item_id_overall": 1
+    }
+  },
+  "products": {
+    "full_row_duplicates": {
+      "total_rows": 32951,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "product_id"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 32951,
+        "unique_count": 32951,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "UNIQUE"
+      }
+    ]
+  },
+  "sellers": {
+    "full_row_duplicates": {
+      "total_rows": 3095,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "seller_id"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 3095,
+        "unique_count": 3095,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "UNIQUE"
+      }
+    ]
+  },
+  "order_payments": {
+    "full_row_duplicates": {
+      "total_rows": 103886,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "order_id",
+          "payment_sequential"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 103886,
+        "unique_count": 103886,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "COMPOSITE_KEY_VALID"
+      },
+      {
+        "key": [
+          "order_id"
+        ],
+        "expected_uniqueness": "EXPECTED_REPEAT",
+        "total_valid_keys": 103886,
+        "unique_count": 99440,
+        "duplicate_count": 4446,
+        "duplicate_percentage": 4.2796911999691964,
+        "max_frequency": 29,
+        "classification": "EXPECTED_REPEAT"
+      }
+    ]
+  },
+  "order_reviews": {
+    "full_row_duplicates": {
+      "total_rows": 99224,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "review_id"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 99224,
+        "unique_count": 98410,
+        "duplicate_count": 814,
+        "duplicate_percentage": 0.8203660404740789,
+        "max_frequency": 3,
+        "classification": "UNEXPECTED_DUPLICATE"
+      },
+      {
+        "key": [
+          "order_id"
+        ],
+        "expected_uniqueness": "EXPECTED_REPEAT",
+        "total_valid_keys": 99224,
+        "unique_count": 98673,
+        "duplicate_count": 551,
+        "duplicate_percentage": 0.555309199387245,
+        "max_frequency": 3,
+        "classification": "EXPECTED_REPEAT"
+      }
+    ]
+  },
+  "geolocation": {
+    "full_row_duplicates": {
+      "total_rows": 1000163,
+      "full_row_duplicates": 261831,
+      "duplicate_percentage": 26.17883285024541,
+      "classification": "FULL_ROW_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "geolocation_zip_code_prefix"
+        ],
+        "expected_uniqueness": "EXPECTED_REPEAT",
+        "total_valid_keys": 1000163,
+        "unique_count": 19015,
+        "duplicate_count": 981148,
+        "duplicate_percentage": 98.09880989398728,
+        "max_frequency": 1146,
+        "classification": "EXPECTED_REPEAT"
+      }
+    ]
+  },
+  "product_category_translation": {
+    "full_row_duplicates": {
+      "total_rows": 71,
+      "full_row_duplicates": 0,
+      "duplicate_percentage": 0.0,
+      "classification": "NO_DUPLICATE"
+    },
+    "key_validations": [
+      {
+        "key": [
+          "product_category_name"
+        ],
+        "expected_uniqueness": "UNIQUE",
+        "total_valid_keys": 71,
+        "unique_count": 71,
+        "duplicate_count": 0,
+        "duplicate_percentage": 0.0,
+        "max_frequency": 1,
+        "classification": "UNIQUE"
+      }
+    ]
+  }
+}

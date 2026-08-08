@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 4.5
+- Validated dataset identities without mutation. Verified `customer_id` is a 1:1 order token, while `customer_unique_id` tracks the human.
+- Identified `review_id` contains unexpected duplicates and should not be used as a strict primary key.
+- Kept `geolocation` full-row duplicates (26%) as they represent valid recurring zip code bounding box coordinates rather than errors.
+
 ## Module 4.4
 - Formalized missing value treatment strategy. Decided to RETAIN_AS_NULL for all missing fields globally to preserve absolute operational integrity and avoid fabricating synthetic reality.
 - Analyzed missing delivery timestamps: 8 are anomalous, remaining are expected due to order status.
