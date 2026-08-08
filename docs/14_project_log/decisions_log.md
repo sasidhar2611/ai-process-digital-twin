@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 4.4
+- Formalized missing value treatment strategy. Decided to RETAIN_AS_NULL for all missing fields globally to preserve absolute operational integrity and avoid fabricating synthetic reality.
+- Analyzed missing delivery timestamps: 8 are anomalous, remaining are expected due to order status.
+- Defined explicit EXCLUDE_FROM_ANALYSIS rule for orders lacking `order_approved_at` during the synthetic generation phase.
+
 ## Module 4.3
 - Decided to create a standalone `TimestampValidator` class that strictly analyzes temporal sequences without mutating or repairing data, to explicitly separate validation from ETL.
 - Distinguished between "Expected Missingness" (due to order status) and true anomalies.

@@ -1,0 +1,141 @@
+{
+  "orders": {
+    "total_records": 99441,
+    "missing_fields": {
+      "order_approved_at": {
+        "missing_count": 160,
+        "missing_percentage": 0.1608994278014099,
+        "data_type": "datetime64[us]",
+        "classification": {
+          "POTENTIAL_DATA_QUALITY_ISSUE": 160,
+          "EXPECTED_MISSING": 0
+        },
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "order_delivered_carrier_date": {
+        "missing_count": 1783,
+        "missing_percentage": 1.7930229985619612,
+        "data_type": "datetime64[us]",
+        "classification": {
+          "EXPECTED_MISSING": 1781,
+          "POTENTIAL_DATA_QUALITY_ISSUE": 2
+        },
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "order_delivered_customer_date": {
+        "missing_count": 2965,
+        "missing_percentage": 2.981667521444877,
+        "data_type": "datetime64[us]",
+        "classification": {
+          "EXPECTED_MISSING": 2957,
+          "POTENTIAL_DATA_QUALITY_ISSUE": 8
+        },
+        "treatment": "RETAIN_AS_NULL"
+      }
+    }
+  },
+  "order_items": {
+    "total_records": 112650,
+    "missing_fields": {}
+  },
+  "products": {
+    "total_records": 32951,
+    "missing_fields": {
+      "product_category_name": {
+        "missing_count": 610,
+        "missing_percentage": 1.8512336499650999,
+        "data_type": "string",
+        "classification": {},
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "product_name_length": {
+        "missing_count": 610,
+        "missing_percentage": 1.8512336499650999,
+        "data_type": "float64",
+        "classification": {},
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "product_description_length": {
+        "missing_count": 610,
+        "missing_percentage": 1.8512336499650999,
+        "data_type": "float64",
+        "classification": {},
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "product_photos_qty": {
+        "missing_count": 610,
+        "missing_percentage": 1.8512336499650999,
+        "data_type": "float64",
+        "classification": {},
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "product_weight_g": {
+        "missing_count": 2,
+        "missing_percentage": 0.006069618524475737,
+        "data_type": "float64",
+        "classification": {
+          "POTENTIAL_DATA_QUALITY_ISSUE": 2
+        },
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "product_length_cm": {
+        "missing_count": 2,
+        "missing_percentage": 0.006069618524475737,
+        "data_type": "float64",
+        "classification": {
+          "POTENTIAL_DATA_QUALITY_ISSUE": 2
+        },
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "product_height_cm": {
+        "missing_count": 2,
+        "missing_percentage": 0.006069618524475737,
+        "data_type": "float64",
+        "classification": {
+          "POTENTIAL_DATA_QUALITY_ISSUE": 2
+        },
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "product_width_cm": {
+        "missing_count": 2,
+        "missing_percentage": 0.006069618524475737,
+        "data_type": "float64",
+        "classification": {
+          "POTENTIAL_DATA_QUALITY_ISSUE": 2
+        },
+        "treatment": "RETAIN_AS_NULL"
+      }
+    }
+  },
+  "customers": {
+    "total_records": 99441,
+    "missing_fields": {}
+  },
+  "sellers": {
+    "total_records": 3095,
+    "missing_fields": {}
+  },
+  "order_payments": {
+    "total_records": 103886,
+    "missing_fields": {}
+  },
+  "order_reviews": {
+    "total_records": 99224,
+    "missing_fields": {
+      "review_comment_title": {
+        "missing_count": 87656,
+        "missing_percentage": 88.34153027493349,
+        "data_type": "string",
+        "classification": {},
+        "treatment": "RETAIN_AS_NULL"
+      },
+      "review_comment_message": {
+        "missing_count": 58247,
+        "missing_percentage": 58.70253164556962,
+        "data_type": "string",
+        "classification": {},
+        "treatment": "RETAIN_AS_NULL"
+      }
+    }
+  }
+}

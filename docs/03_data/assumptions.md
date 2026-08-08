@@ -13,3 +13,7 @@ The following assumptions are formally defined for the synthetic data generation
 
 ## Operating Hours
 - [ASSUMPTION] The synthetic fulfillment center operates on a standardized schedule (e.g., 2 shifts, 06:00 to 22:00, Monday to Saturday). Off-hour orders accumulate in queues.
+
+## Missing Data
+- [ASSUMPTION] Orders missing `order_approved_at` cannot be synthesized and are strictly EXCLUDED_FROM_ANALYSIS in the simulation layer.
+- [ASSUMPTION] Products missing physical dimensions cannot undergo volumetric capacity simulation and must be flagged or excluded from capacity checks.

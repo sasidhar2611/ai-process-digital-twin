@@ -59,3 +59,8 @@ The following variables are REQUIRED for the digital twin but DO NOT exist in th
 - **queue_length**: Integer - Items waiting at start time.
 - **utilization**: Float - Percentage of capacity used.
 - **sla_breach_flag**: Boolean - Whether internal SLA was missed.
+
+## 3. Missing Value Policy
+- **IMPUTED**: None. We do not use statistical imputation for missing operational dates or physical dimensions.
+- **RETAIN_AS_NULL**: Applied to all missing fields globally (e.g., `order_approved_at`, `product_weight_g`, delivery dates, reviews).
+- **EXCLUDE_FROM_ANALYSIS**: Downstream modeling dynamically filters out records that lack mandatory anchors (like `order_approved_at`) without removing them from the standardized baseline dataset.
