@@ -3,9 +3,9 @@
 Before integrating data into the digital twin, the following quality checks [PLANNED] must pass:
 
 ## Real Data Integrity
-1. **Missing Values**: Ensure critical fields (`order_id`, `order_approved_at`) have zero nulls.
+1. **Missing Values**: Ensure critical fields (`order_id`, `order_approved_at`) have zero nulls. *(Update: order_approved_at has 0.16% missing values. Module 4.4 will handle this).*
 2. **Duplicate Orders**: Assert `order_id` uniqueness.
-3. **Timestamp Ordering**: Assert `order_purchase_timestamp` <= `order_approved_at` <= delivery timestamps.
+3. **Timestamp Ordering**: Assert `order_purchase_timestamp` <= `order_approved_at` <= delivery timestamps. *(Update: Validation executed in Module 4.3. Found 1.39% violation for approved <= carrier. See timestamp_validation.md).*
 4. **Orphan Relationships**: Ensure all items in `olist_order_items` match a valid `order_id` in `olist_orders`.
 
 ## Synthetic Data Integrity

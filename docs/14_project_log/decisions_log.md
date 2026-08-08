@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 4.3
+- Decided to create a standalone `TimestampValidator` class that strictly analyzes temporal sequences without mutating or repairing data, to explicitly separate validation from ETL.
+- Distinguished between "Expected Missingness" (due to order status) and true anomalies.
+- Formalized the business assumption that `order_approved_at` acts as a demand release anchor, clarifying that it is NOT a physical warehouse-arrival timestamp.
+
 ## Module 4.2
 - Standardized all categorical/identifier fields to `string` dtype to prevent numeric operations on keys (like `customer_id` or `zip_code`).
 - Standardized all continuous/numeric metrics to `float64` strictly. This allows Pandas to natively handle missing values (NaN) during standard loads without crashing or requiring row drops.

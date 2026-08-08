@@ -1,0 +1,148 @@
+{
+  "orders": {
+    "missingness": {
+      "order_purchase_timestamp": {
+        "missing": 0,
+        "percentage": 0.0
+      },
+      "order_approved_at": {
+        "missing": 160,
+        "percentage": 0.1608994278014099
+      },
+      "order_delivered_carrier_date": {
+        "missing": 1783,
+        "percentage": 1.7930229985619612
+      },
+      "order_delivered_customer_date": {
+        "missing": 2965,
+        "percentage": 2.981667521444877
+      },
+      "order_estimated_delivery_date": {
+        "missing": 0,
+        "percentage": 0.0
+      }
+    },
+    "date_ranges": {
+      "order_purchase_timestamp": {
+        "min": "2016-09-04 21:15:19",
+        "max": "2018-10-17 17:30:18"
+      },
+      "order_approved_at": {
+        "min": "2016-09-15 12:16:38",
+        "max": "2018-09-03 17:40:06"
+      },
+      "order_delivered_carrier_date": {
+        "min": "2016-10-08 10:34:01",
+        "max": "2018-09-11 19:48:28"
+      },
+      "order_delivered_customer_date": {
+        "min": "2016-10-11 13:46:32",
+        "max": "2018-10-17 13:22:46"
+      },
+      "order_estimated_delivery_date": {
+        "min": "2016-09-30 00:00:00",
+        "max": "2018-11-12 00:00:00"
+      }
+    },
+    "rules": {
+      "Rule A": {
+        "description": "purchase <= approved",
+        "evaluated": 99281,
+        "passed": 99281,
+        "failed": 0,
+        "missing_or_unavailable": 160,
+        "failure_percentage": 0.0
+      },
+      "Rule B": {
+        "description": "approved <= delivered_carrier",
+        "evaluated": 97644,
+        "passed": 96285,
+        "failed": 1359,
+        "missing_or_unavailable": 1797,
+        "failure_percentage": 1.3917905862111344
+      },
+      "Rule C": {
+        "description": "delivered_carrier <= delivered_customer",
+        "evaluated": 96475,
+        "passed": 96452,
+        "failed": 23,
+        "missing_or_unavailable": 2966,
+        "failure_percentage": 0.02384037315366675
+      },
+      "Rule D": {
+        "description": "purchase <= delivered_customer",
+        "evaluated": 96476,
+        "passed": 96476,
+        "failed": 0,
+        "missing_or_unavailable": 2965,
+        "failure_percentage": 0.0
+      },
+      "Rule E": {
+        "description": "delivered_customer <= estimated_delivery",
+        "evaluated": 96476,
+        "passed": 88649,
+        "failed": 7827,
+        "missing_or_unavailable": 2965,
+        "failure_percentage": 8.112898544715783
+      }
+    },
+    "status_analysis": {
+      "approved": {
+        "total": 2,
+        "missing_delivery_date": 2
+      },
+      "canceled": {
+        "total": 625,
+        "missing_delivery_date": 619
+      },
+      "created": {
+        "total": 5,
+        "missing_delivery_date": 5
+      },
+      "delivered": {
+        "total": 96478,
+        "missing_delivery_date": 8
+      },
+      "invoiced": {
+        "total": 314,
+        "missing_delivery_date": 314
+      },
+      "processing": {
+        "total": 301,
+        "missing_delivery_date": 301
+      },
+      "shipped": {
+        "total": 1107,
+        "missing_delivery_date": 1107
+      },
+      "unavailable": {
+        "total": 609,
+        "missing_delivery_date": 609
+      }
+    }
+  },
+  "items": {
+    "missingness": {
+      "shipping_limit_date": {
+        "missing": 0,
+        "percentage": 0.0
+      }
+    },
+    "date_ranges": {
+      "shipping_limit_date": {
+        "min": "2016-09-19 00:15:34",
+        "max": "2020-04-09 22:35:08"
+      }
+    },
+    "rules": {
+      "Item Rule A": {
+        "description": "order_approved_at <= shipping_limit_date",
+        "evaluated": 112635,
+        "passed": 112508,
+        "failed": 127,
+        "missing_or_unavailable": 15,
+        "failure_percentage": 0.11275358458738402
+      }
+    }
+  }
+}

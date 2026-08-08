@@ -4,7 +4,8 @@ The following assumptions are formally defined for the synthetic data generation
 
 ## Business Process
 - [ASSUMPTION] Fulfillment operations follow a strictly linear sequence: Order Processing -> Picking -> Packing -> Sorting -> Dispatch.
-- [ASSUMPTION] The real `order_approved_at` timestamp perfectly represents the moment an order drops into the warehouse system.
+- [REAL] `order_approved_at` represents the actual payment approval timestamp.
+- [ASSUMPTION] Warehouse processing availability is anchored from this approval/release point for future modeling (it is NOT an actual measured warehouse-arrival timestamp).
 
 ## Workforce & Capacity
 - [ASSUMPTION] Workers are assigned to specific stages and do not dynamically reallocate during a shift.
