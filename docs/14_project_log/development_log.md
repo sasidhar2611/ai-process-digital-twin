@@ -12,7 +12,7 @@
 - **Module 4.7**: Product Physical Data Validation [IMPLEMENTED / TESTED]
 - **Module 4.8**: Processed Dataset Construction [IMPLEMENTED / TESTED]
 
-## Git Workflow
-The established Git workflow for the project is:
+### Module 5: Synthetic Operational Data Modeling
+- **Module 5.1**: Operational Process Model & Synthetic Data Specification [IMPLEMENTED / TESTED]
 PLAN -> IMPLEMENT ONE MODULE -> TEST -> DOCUMENT -> REVIEW -> COMMIT -> PUSH TO GITHUB -> VERIFY -> STOP.
 Every completed module has a meaningful Git commit and is pushed to GitHub. Raw datasets are explicitly excluded from GitHub.

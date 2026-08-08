@@ -13,3 +13,4 @@
 - Implemented Module 4.6 Referential Integrity Validation. Validated foreign-key relationships and documented the 100% core match rate and many-to-many review mappings.
 - Implemented Module 4.7 Product Physical Data Validation. Validated physical product attributes (weight, dimensions) ensuring completeness and assessing distributions and outliers for digital-twin relevance.
 - Implemented Module 4.8 Processed Dataset Construction. Built reproducible pipeline generating parquet-based processed datasets with explicit eligibility and physical validation flags, completing Module 4.
+- Implemented Module 5.1 Operational Process Model & Synthetic Data Specification. Documented the 5-stage fulfillment process, schemas, calibration strategies, and validation rules without generating synthetic data yet.

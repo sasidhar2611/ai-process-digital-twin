@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 5.1
+- Formally defined 5 linear warehouse stages (PROCESSING, PICKING, PACKING, SORTING, DISPATCH) based strictly on Olist real order records.
+- Explicitly isolated physical derived fields (e.g. `total_volume_cm3`) from pure synthetic fields (e.g. `processing_time`, `queue_length`) establishing strict REAL vs ASSUMPTION lineage.
+- Documented Lognormal distribution baseline for processing times, FIFO queuing policy, and standardized shift operations for simulation configuration.
+
 ## Module 4.8
 - Decided to build a single comprehensive processed dataset layer, saved in parquet format.
 - Decided to implement row retention by preserving 100% of source records and maintaining explicit eligibility flags (e.g., `eligible_for_demand_timeline`) to prevent destructive data loss during downstream simulations.
