@@ -1,0 +1,2 @@
+# Minimal requirements for foundation module
+pytest==8.3.4
