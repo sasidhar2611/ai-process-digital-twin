@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 4.7
+- Validated physical attributes (weight, dimensions). Decided to treat statistical outliers as valid physical possibilities (e.g. large items).
+- Decided to classify 4 items with exactly `0g` weight as requiring domain validation rather than arbitrarily correcting them. No negative dimensions found.
+- Kept derived volume as purely analytical context rather than polluting the raw dataset.
+
 ## Module 4.6
 - Verified 100% referential integrity across all core operational tables. No true orphans exist.
 - Confirmed the translation dataset is a helper mapping, not a parent. Unmatched product categories are treated as `UNTRANSLATED_CATEGORY` rather than orphans.

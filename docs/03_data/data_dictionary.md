@@ -61,7 +61,7 @@ The following variables are REQUIRED for the digital twin but DO NOT exist in th
 - **sla_breach_flag**: Boolean - Whether internal SLA was missed.
 
 ## 3. Missing Value Policy
-- **IMPUTED**: None. We do not use statistical imputation for missing operational dates or physical dimensions.
+- **IMPUTED**: None. We do not use statistical imputation for missing operational dates or physical dimensions (e.g., zero weights are treated as requiring domain validation, not imputed).
 - **RETAIN_AS_NULL**: Applied to all missing fields globally (e.g., `order_approved_at`, `product_weight_g`, delivery dates, reviews).
 - **EXCLUDE_FROM_ANALYSIS**: Downstream modeling dynamically filters out records that lack mandatory anchors (like `order_approved_at`) without removing them from the standardized baseline dataset.
 
