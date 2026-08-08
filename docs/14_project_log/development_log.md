@@ -8,6 +8,7 @@
 - **Module 4.3**: Timestamp Validation [IMPLEMENTED / TESTED]
 - **Module 4.4**: Missing-Value Analysis & Treatment [IMPLEMENTED / TESTED]
 - **Module 4.5**: Duplicate & Key Validation [IMPLEMENTED / TESTED]
+- **Module 4.6**: Referential Integrity Validation [IMPLEMENTED / TESTED]
 
 ## Git Workflow
 The established Git workflow for the project is:

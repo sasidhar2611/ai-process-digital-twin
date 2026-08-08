@@ -66,8 +66,8 @@ The following variables are REQUIRED for the digital twin but DO NOT exist in th
 - **EXCLUDE_FROM_ANALYSIS**: Downstream modeling dynamically filters out records that lack mandatory anchors (like `order_approved_at`) without removing them from the standardized baseline dataset.
 
 ## 4. Key Identifiers & Relationships
-- **Orders**: `order_id` is the primary key. `customer_id` is unique per order (1:1), representing the order token, NOT the customer profile.
+- **Orders**: `order_id` is the primary key. `customer_id` is unique per order (1:1), representing the order token, NOT the customer profile. All orders have 100% referential integrity with customers.
 - **Customers**: `customer_unique_id` is the actual human buyer identifier (1:M with orders).
-- **Order Items**: Composite key `order_id` + `order_item_id` is unique.
-- **Payments**: Composite key `order_id` + `payment_sequential` is unique.
-- **Reviews**: `review_id` is NOT perfectly unique (814 duplicates exist). Do not use as a strict primary key.
+- **Order Items**: Composite key `order_id` + `order_item_id` is unique. 100% referential integrity with orders, products, and sellers.
+- **Payments**: Composite key `order_id` + `payment_sequential` is unique. 100% referential integrity with orders.
+- **Reviews**: `review_id` is NOT perfectly unique (814 duplicates exist). Do not use as a strict primary key. The relationship with orders is many-to-many (one review can cover multiple orders).

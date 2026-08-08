@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 4.6
+- Verified 100% referential integrity across all core operational tables. No true orphans exist.
+- Confirmed the translation dataset is a helper mapping, not a parent. Unmatched product categories are treated as `UNTRANSLATED_CATEGORY` rather than orphans.
+- Documented a many-to-many relationship between reviews and orders.
+
 ## Module 4.5
 - Validated dataset identities without mutation. Verified `customer_id` is a 1:1 order token, while `customer_unique_id` tracks the human.
 - Identified `review_id` contains unexpected duplicates and should not be used as a strict primary key.

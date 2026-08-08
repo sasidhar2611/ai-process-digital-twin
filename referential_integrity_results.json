@@ -1,0 +1,96 @@
+{
+  "orders_to_customers": {
+    "parent_key": "customer_id",
+    "child_key": "customer_id",
+    "child_rows": 99441,
+    "matched_rows": 99441,
+    "unmatched_rows": 0,
+    "missing_child_keys": 0,
+    "match_percentage": 100.0,
+    "orphan_percentage": 0.0,
+    "classification": "VALID_MATCH",
+    "expected_relationship": "FOREIGN_KEY"
+  },
+  "items_to_orders": {
+    "parent_key": "order_id",
+    "child_key": "order_id",
+    "child_rows": 112650,
+    "matched_rows": 112650,
+    "unmatched_rows": 0,
+    "missing_child_keys": 0,
+    "match_percentage": 100.0,
+    "orphan_percentage": 0.0,
+    "classification": "VALID_MATCH",
+    "expected_relationship": "FOREIGN_KEY"
+  },
+  "items_to_products": {
+    "parent_key": "product_id",
+    "child_key": "product_id",
+    "child_rows": 112650,
+    "matched_rows": 112650,
+    "unmatched_rows": 0,
+    "missing_child_keys": 0,
+    "match_percentage": 100.0,
+    "orphan_percentage": 0.0,
+    "classification": "VALID_MATCH",
+    "expected_relationship": "FOREIGN_KEY"
+  },
+  "items_to_sellers": {
+    "parent_key": "seller_id",
+    "child_key": "seller_id",
+    "child_rows": 112650,
+    "matched_rows": 112650,
+    "unmatched_rows": 0,
+    "missing_child_keys": 0,
+    "match_percentage": 100.0,
+    "orphan_percentage": 0.0,
+    "classification": "VALID_MATCH",
+    "expected_relationship": "FOREIGN_KEY"
+  },
+  "payments_to_orders": {
+    "parent_key": "order_id",
+    "child_key": "order_id",
+    "child_rows": 103886,
+    "matched_rows": 103886,
+    "unmatched_rows": 0,
+    "missing_child_keys": 0,
+    "match_percentage": 100.0,
+    "orphan_percentage": 0.0,
+    "classification": "VALID_MATCH",
+    "expected_relationship": "FOREIGN_KEY"
+  },
+  "reviews_to_orders": {
+    "parent_key": "order_id",
+    "child_key": "order_id",
+    "child_rows": 99224,
+    "matched_rows": 99224,
+    "unmatched_rows": 0,
+    "missing_child_keys": 0,
+    "match_percentage": 100.0,
+    "orphan_percentage": 0.0,
+    "classification": "VALID_MATCH",
+    "expected_relationship": "FOREIGN_KEY"
+  },
+  "products_to_translation": {
+    "parent_key": "product_category_name",
+    "child_key": "product_category_name",
+    "child_rows": 32951,
+    "matched_rows": 32328,
+    "unmatched_rows": 13,
+    "missing_child_keys": 610,
+    "match_percentage": 98.1093138296258,
+    "orphan_percentage": 0.039452520409092286,
+    "classification": "UNTRANSLATED_CATEGORY",
+    "expected_relationship": "TRANSLATION"
+  },
+  "custom_review_analysis": {
+    "max_reviews_per_order": 3,
+    "orders_with_multiple_reviews": 547,
+    "max_orders_per_review": 3,
+    "reviews_mapping_to_multiple_orders": 789
+  },
+  "custom_items_analysis": {
+    "min_items_per_order": 1,
+    "max_items_per_order": 21
+  }
+}
