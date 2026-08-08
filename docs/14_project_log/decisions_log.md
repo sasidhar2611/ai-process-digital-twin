@@ -6,6 +6,10 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 4.8
+- Decided to build a single comprehensive processed dataset layer, saved in parquet format.
+- Decided to implement row retention by preserving 100% of source records and maintaining explicit eligibility flags (e.g., `eligible_for_demand_timeline`) to prevent destructive data loss during downstream simulations.
+
 ## Module 4.7
 - Validated physical attributes (weight, dimensions). Decided to treat statistical outliers as valid physical possibilities (e.g. large items).
 - Decided to classify 4 items with exactly `0g` weight as requiring domain validation rather than arbitrarily correcting them. No negative dimensions found.

@@ -2,6 +2,10 @@
 
 The following assumptions are formally defined for the synthetic data generation and digital twin simulation phases:
 
+## Data Deletion & Filtering
+- **Data Deletion Strategy**: The original raw data remains immutable. No rows are completely deleted from the database or the primary `data/processed/` analytical datasets.
+- **Analytical Filtering Strategy**: Ineligible or incomplete rows are flagged (e.g., `eligible_for_demand_timeline`, `physical_data_complete`) and kept in the processed datasets. The downstream processes (such as the discrete-event simulation) must filter rows dynamically on-the-fly rather than consuming destructive datasets.
+
 ## Business Process
 - [ASSUMPTION] Fulfillment operations follow a strictly linear sequence: Order Processing -> Picking -> Packing -> Sorting -> Dispatch.
 - [REAL] `order_approved_at` represents the actual payment approval timestamp.

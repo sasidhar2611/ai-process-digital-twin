@@ -56,9 +56,23 @@ The following variables are REQUIRED for the digital twin but DO NOT exist in th
 - **queue_capacity**: Integer - Maximum items waiting before blocking upstream.
 
 ### Metrics
-- **queue_length**: Integer - Items waiting at start time.
-- **utilization**: Float - Percentage of capacity used.
+- **process_start_time**: datetime - When processing began.
+- **process_end_time**: datetime - When processing ended.
+- **worker_id**: int - The ID of the synthetic worker assigned to the task.
 - **sla_breach_flag**: Boolean - Whether internal SLA was missed.
+
+## 2.3 Processed Dataset Flags (Module 4.8)
+### Orders
+- **has_approved_timestamp**: Boolean - True if `order_approved_at` is not null.
+- **eligible_for_demand_timeline**: Boolean - Same as `has_approved_timestamp`.
+- **is_delivered_timestamp_complete**: Boolean - True if both carrier and customer delivery dates are not null.
+- **eligible_for_delivery_kpi**: Boolean - True if order status is 'delivered' and `is_delivered_timestamp_complete` is true.
+- **delivery_delay_days**: Float - Derived as `order_delivered_customer_date` - `order_estimated_delivery_date`.
+
+### Products
+- **physical_data_complete**: Boolean - True if weight, length, height, width are all present.
+- **physical_measurement_valid**: Boolean - True if complete AND all dimensions/weight > 0.
+- **physical_volume_cm3**: Float - Derived volume (length * height * width).
 
 ## 3. Missing Value Policy
 - **IMPUTED**: None. We do not use statistical imputation for missing operational dates or physical dimensions (e.g., zero weights are treated as requiring domain validation, not imputed).

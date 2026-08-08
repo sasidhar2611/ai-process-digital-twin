@@ -1,0 +1,171 @@
+{
+  "processed_orders": {
+    "source_row_count": 99441,
+    "processed_row_count": 99441,
+    "row_difference": 0,
+    "columns": [
+      "order_id",
+      "customer_id",
+      "order_status",
+      "order_purchase_timestamp",
+      "order_approved_at",
+      "order_delivered_carrier_date",
+      "order_delivered_customer_date",
+      "order_estimated_delivery_date",
+      "has_approved_timestamp",
+      "eligible_for_demand_timeline",
+      "is_delivered_timestamp_complete",
+      "eligible_for_delivery_kpi",
+      "delivery_delay_days"
+    ],
+    "dtypes": {
+      "order_id": "string",
+      "customer_id": "string",
+      "order_status": "string",
+      "order_purchase_timestamp": "datetime64[us]",
+      "order_approved_at": "datetime64[us]",
+      "order_delivered_carrier_date": "datetime64[us]",
+      "order_delivered_customer_date": "datetime64[us]",
+      "order_estimated_delivery_date": "datetime64[us]",
+      "has_approved_timestamp": "bool",
+      "eligible_for_demand_timeline": "bool",
+      "is_delivered_timestamp_complete": "bool",
+      "eligible_for_delivery_kpi": "bool[pyarrow]",
+      "delivery_delay_days": "float64"
+    }
+  },
+  "processed_customers": {
+    "source_row_count": 99441,
+    "processed_row_count": 99441,
+    "row_difference": 0,
+    "columns": [
+      "customer_id",
+      "customer_unique_id",
+      "customer_zip_code_prefix",
+      "customer_city",
+      "customer_state"
+    ],
+    "dtypes": {
+      "customer_id": "string",
+      "customer_unique_id": "string",
+      "customer_zip_code_prefix": "int64",
+      "customer_city": "string",
+      "customer_state": "string"
+    }
+  },
+  "processed_products": {
+    "source_row_count": 32951,
+    "processed_row_count": 32951,
+    "row_difference": 0,
+    "columns": [
+      "product_id",
+      "product_category_name",
+      "product_name_length",
+      "product_description_length",
+      "product_photos_qty",
+      "product_weight_g",
+      "product_length_cm",
+      "product_height_cm",
+      "product_width_cm",
+      "physical_data_complete",
+      "physical_measurement_valid",
+      "physical_volume_cm3"
+    ],
+    "dtypes": {
+      "product_id": "string",
+      "product_category_name": "string",
+      "product_name_length": "float64",
+      "product_description_length": "float64",
+      "product_photos_qty": "float64",
+      "product_weight_g": "float64",
+      "product_length_cm": "float64",
+      "product_height_cm": "float64",
+      "product_width_cm": "float64",
+      "physical_data_complete": "bool",
+      "physical_measurement_valid": "bool",
+      "physical_volume_cm3": "float64"
+    }
+  },
+  "processed_order_items": {
+    "source_row_count": 112650,
+    "processed_row_count": 112650,
+    "row_difference": 0,
+    "columns": [
+      "order_id",
+      "order_item_id",
+      "product_id",
+      "seller_id",
+      "shipping_limit_date",
+      "price",
+      "freight_value"
+    ],
+    "dtypes": {
+      "order_id": "string",
+      "order_item_id": "string",
+      "product_id": "string",
+      "seller_id": "string",
+      "shipping_limit_date": "datetime64[us]",
+      "price": "float64",
+      "freight_value": "float64"
+    }
+  },
+  "processed_sellers": {
+    "source_row_count": 3095,
+    "processed_row_count": 3095,
+    "row_difference": 0,
+    "columns": [
+      "seller_id",
+      "seller_zip_code_prefix",
+      "seller_city",
+      "seller_state"
+    ],
+    "dtypes": {
+      "seller_id": "string",
+      "seller_zip_code_prefix": "int64",
+      "seller_city": "string",
+      "seller_state": "string"
+    }
+  },
+  "processed_payments": {
+    "source_row_count": 103886,
+    "processed_row_count": 103886,
+    "row_difference": 0,
+    "columns": [
+      "order_id",
+      "payment_sequential",
+      "payment_type",
+      "payment_installments",
+      "payment_value"
+    ],
+    "dtypes": {
+      "order_id": "string",
+      "payment_sequential": "int64",
+      "payment_type": "string",
+      "payment_installments": "int64",
+      "payment_value": "float64"
+    }
+  },
+  "processed_reviews": {
+    "source_row_count": 99224,
+    "processed_row_count": 99224,
+    "row_difference": 0,
+    "columns": [
+      "review_id",
+      "order_id",
+      "review_score",
+      "review_comment_title",
+      "review_comment_message",
+      "review_creation_date",
+      "review_answer_timestamp"
+    ],
+    "dtypes": {
+      "review_id": "string",
+      "order_id": "string",
+      "review_score": "int64",
+      "review_comment_title": "string",
+      "review_comment_message": "string",
+      "review_creation_date": "datetime64[us]",
+      "review_answer_timestamp": "datetime64[us]"
+    }
+  }
+}
