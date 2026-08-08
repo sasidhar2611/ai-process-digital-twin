@@ -4,6 +4,7 @@
 - Initialized standard repository structure.
 - Created virtual environment and Git repository.
 - Decided on strict module-by-module architecture strategy.
+- Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
 ## Module 2
 - Selected Olist Brazilian E-Commerce dataset as the primary data source.

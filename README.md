@@ -12,7 +12,7 @@ Incoming Orders -> Order Processing -> Picking -> Packing -> Sorting -> Dispatch
 
 ## Planned Capabilities
 - [IMPLEMENTED] Project foundation and workspace initialization.
-- [PLANNED] Data collection and ingestion.
+- [IMPLEMENTED] Data collection and ingestion.
 - [PLANNED] Analytics and digital twin simulation.
 - [PLANNED] Bottleneck analysis and what-if simulation.
 - [PLANNED] Machine learning for risk analysis and recommendation engine.
@@ -34,4 +34,8 @@ The project follows a strict module-by-module development methodology. Only one 
 
 ## Current Status
 Module 1 (Project Foundation & Workspace Initialization) is IMPLEMENTED.
-Module 2 (Dataset Research & Data Specification) is PLANNED.
+Module 2 (Dataset Research & Data Specification) is IMPLEMENTED.
+Module 3 (Dataset Acquisition & Initial Data Inspection) is IMPLEMENTED.
+
+## Repository
+The project's GitHub repository is located at: `https://github.com/sasidhar2611/ai-process-digital-twin`.
