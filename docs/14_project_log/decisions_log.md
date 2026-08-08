@@ -6,6 +6,12 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 4.2
+- Standardized all categorical/identifier fields to `string` dtype to prevent numeric operations on keys (like `customer_id` or `zip_code`).
+- Standardized all continuous/numeric metrics to `float64` strictly. This allows Pandas to natively handle missing values (NaN) during standard loads without crashing or requiring row drops.
+- Timestamps explicitly cast to `datetime64` using `coerce` so that malformed dates become `NaT` without dropping the row.
+- Addressed dataset-specific typos (`lenght` to `length`) in product descriptions to preserve readability while maintaining semantic meaning.
+
 ## Module 4.1
 - Decided to create a strict immutable Python data loading layer for raw datasets.
 - Decided to add pandas to the requirements to handle CSV loading securely.

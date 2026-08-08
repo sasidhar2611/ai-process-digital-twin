@@ -6,3 +6,4 @@
 - Initialized Module 3 Dataset Acquisition and Initial Data Inspection.
 - Created public GitHub repository `ai-process-digital-twin` and configured Git workflow tracking `main` branch.
 - Implemented Module 4.1 Data Loading & Immutable Raw Data Layer. Added pandas to dependencies and created rigorous loader tests.
+- Implemented Module 4.2 Column Naming & Data Type Standardization. Standardized dtypes (string/float64/datetime64) across datasets and enforced snake_case.

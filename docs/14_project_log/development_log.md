@@ -4,6 +4,7 @@
 - **Module 2**: Dataset Research & Data Specification [IMPLEMENTED]
 - **Module 3**: Dataset Acquisition & Inspection [IMPLEMENTED]
 - **Module 4.1**: Data Loading & Immutable Raw Data Layer [IMPLEMENTED / TESTED]
+- **Module 4.2**: Column Naming & Data Type Standardization [IMPLEMENTED / TESTED]
 
 ## Git Workflow
 The established Git workflow for the project is:

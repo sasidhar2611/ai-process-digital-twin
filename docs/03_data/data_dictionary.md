@@ -2,16 +2,37 @@
 
 ## 1. Real Data Specification (From Olist Dataset)
 
-| Category | Source Table | Original Column Name | Standardized Column Name | Data Type | Business Meaning | Required | Why Needed |
-|----------|--------------|----------------------|--------------------------|-----------|------------------|----------|------------|
-| Identity | olist_orders | order_id | order_id | String | Unique order identifier | Yes | Primary key connecting real demand to synthetic operations |
-| Identity | olist_order_items | order_item_id | order_item_id | Integer | Sequence of item in order | Yes | Granular item tracking |
-| Timing | olist_orders | order_purchase_timestamp | order_purchase_at | Datetime | When customer bought | Yes | Trigger for order arrival in simulation |
-| Timing | olist_orders | order_approved_at | order_approved_at | Datetime | When payment approved | Yes | Represents start of fulfillment |
-| Product | olist_products | product_id | product_id | String | Unique product identifier | Yes | Connects order to product traits |
-| Product | olist_products | product_weight_g | product_weight_g | Float | Weight of product | Yes | Impacts packing/picking time |
-| Product | olist_products | product_volume | (Calculated) | Float | Derived from dimensions | Yes | Determines bin size and capacity |
-| Customer | olist_customers| customer_state | customer_state | String | Destination state | Yes | Impacts dispatch routing/sorting |
+| Dataset | Original Column Name | Standardized Column Name | Data Type | Meaning | Transformation Performed | Reason for Transformation |
+|---------|----------------------|--------------------------|-----------|---------|--------------------------|---------------------------|
+| `orders` | `order_id` | `order_id` | `string` | Unique order identifier | UNCHANGED | Already complies with standard |
+| `orders` | `customer_id` | `customer_id` | `string` | Unique customer relation | UNCHANGED | Already complies with standard |
+| `orders` | `order_purchase_timestamp` | `order_purchase_timestamp` | `datetime64` | When customer bought | STANDARDIZED (Type cast) | Required for temporal analysis |
+| `orders` | `order_approved_at` | `order_approved_at` | `datetime64` | When payment approved | STANDARDIZED (Type cast) | Required for temporal analysis |
+| `orders` | `order_delivered_carrier_date` | `order_delivered_carrier_date` | `datetime64` | When given to carrier | STANDARDIZED (Type cast) | Required for temporal analysis |
+| `orders` | `order_delivered_customer_date` | `order_delivered_customer_date` | `datetime64` | When received by customer | STANDARDIZED (Type cast) | Required for temporal analysis |
+| `orders` | `order_estimated_delivery_date` | `order_estimated_delivery_date` | `datetime64` | Estimated delivery | STANDARDIZED (Type cast) | Required for temporal analysis |
+| `orders` | `order_status` | `order_status` | `string` | Status of the order | UNCHANGED | Already complies with standard |
+| `order_items` | `order_id` | `order_id` | `string` | Order foreign key | UNCHANGED | Already complies with standard |
+| `order_items` | `order_item_id` | `order_item_id` | `string` | Sequence of item in order | UNCHANGED | Already complies with standard |
+| `order_items` | `product_id` | `product_id` | `string` | Product foreign key | UNCHANGED | Already complies with standard |
+| `order_items` | `seller_id` | `seller_id` | `string` | Seller foreign key | UNCHANGED | Already complies with standard |
+| `order_items` | `shipping_limit_date` | `shipping_limit_date` | `datetime64` | Limit for seller dispatch | STANDARDIZED (Type cast) | Required for temporal analysis |
+| `order_items` | `price` | `price` | `float64` | Item price | STANDARDIZED (Type cast) | Enforce numeric format |
+| `order_items` | `freight_value` | `freight_value` | `float64` | Item freight cost | STANDARDIZED (Type cast) | Enforce numeric format |
+| `products` | `product_id` | `product_id` | `string` | Unique product identifier | UNCHANGED | Already complies with standard |
+| `products` | `product_category_name` | `product_category_name` | `string` | Category of product | UNCHANGED | Already complies with standard |
+| `products` | `product_name_lenght` | `product_name_length` | `float64` | Length of product name | STANDARDIZED (Rename, Type cast) | Fix typo, enforce numeric |
+| `products` | `product_description_lenght`| `product_description_length` | `float64` | Length of description | STANDARDIZED (Rename, Type cast) | Fix typo, enforce numeric |
+| `products` | `product_photos_qty` | `product_photos_qty` | `float64` | Number of photos | STANDARDIZED (Type cast) | Enforce numeric format |
+| `products` | `product_weight_g` | `product_weight_g` | `float64` | Weight of product | STANDARDIZED (Type cast) | Enforce numeric format |
+| `products` | `product_length_cm` | `product_length_cm` | `float64` | Length of product | STANDARDIZED (Type cast) | Enforce numeric format |
+| `products` | `product_height_cm` | `product_height_cm` | `float64` | Height of product | STANDARDIZED (Type cast) | Enforce numeric format |
+| `products` | `product_width_cm` | `product_width_cm` | `float64` | Width of product | STANDARDIZED (Type cast) | Enforce numeric format |
+| `customers` | `customer_id` | `customer_id` | `string` | Unique customer relation | UNCHANGED | Already complies with standard |
+| `customers` | `customer_unique_id` | `customer_unique_id` | `string` | Customer absolute ID | UNCHANGED | Already complies with standard |
+| `customers` | `customer_zip_code_prefix`| `customer_zip_code_prefix`| `float64` | Zip code prefix | STANDARDIZED (Type cast) | Enforce numeric format |
+| `customers` | `customer_city` | `customer_city` | `string` | City of customer | UNCHANGED | Already complies with standard |
+| `customers` | `customer_state` | `customer_state` | `string` | State of customer | UNCHANGED | Already complies with standard |
 
 ## 2. Synthetic Operational Data Specification
 
