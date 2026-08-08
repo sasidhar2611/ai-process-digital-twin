@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 5.2
+- Generated synthetic warehouse operational dataset strictly tracing real `order_id`s, without fabricating missing physical attributes.
+- Adopted sequential event-based loop to schedule workers and track queue lengths dynamically at arrival time, respecting a strict 08:00 - 18:00 operating shift.
+- Validated external carrier completion plausibility, achieving ~97% logic consistency without artificially overriding generation equations.
+
 ## Module 5.1
 - Formally defined 5 linear warehouse stages (PROCESSING, PICKING, PACKING, SORTING, DISPATCH) based strictly on Olist real order records.
 - Explicitly isolated physical derived fields (e.g. `total_volume_cm3`) from pure synthetic fields (e.g. `processing_time`, `queue_length`) establishing strict REAL vs ASSUMPTION lineage.
