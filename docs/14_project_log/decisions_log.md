@@ -3,6 +3,10 @@
 ## Module 1
 - Initialized standard repository structure.
 - Created virtual environment and Git repository.
+## Module 5.6.5
+- Executed the `extended_shift` scenario evaluating the impact of extending the daily operating window from 10 hours to 12 hours.
+- Used the `productivity_factor` correction fix implemented in Module 5.6.4 for accurate neutral execution.
+
 ## Module 5.6.4
 - Fixed productivity utilization mechanism in `generator.py` to ensure `productivity_factor` from config is correctly used as the mean for processing times.
 - Executed the `productivity_plus_10` scenario evaluating the impact of increasing productivity by 10%.

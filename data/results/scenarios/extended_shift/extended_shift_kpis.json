@@ -1,0 +1,13 @@
+{
+    "scenario_id": "extended_shift",
+    "orders_processed": 99281,
+    "mean_flow_time": 15839.859246692915,
+    "median_flow_time": 4958.99951373,
+    "p95_flow_time": 43373.863803082,
+    "p99_flow_time": 76731.43584845155,
+    "mean_processing_time": 798.1357947817974,
+    "mean_waiting_time": 15041.723451160726,
+    "sla_achievement_percentage": 100.0,
+    "sla_breach_count": 0,
+    "total_simulation_time": 62055671.157791
+}

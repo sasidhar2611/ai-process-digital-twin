@@ -42,3 +42,4 @@ It is critical to distinguish between:
 - **Picking Capacity +5** (`picking_plus_5`): Evaluated in Module 5.6.2. Demonstrates OFAT isolation by exclusively expanding Picking worker count.
 - **Packing Capacity +2** (`packing_plus_2`): Evaluated in Module 5.6.3. Demonstrates OFAT isolation by exclusively expanding Packing worker count.
 - **Productivity +10%** (`productivity_plus_10`): Evaluated in Module 5.6.4. Demonstrates global efficiency improvement on existing constraints.
+- **Extended Shift** (`extended_shift`): Evaluated in Module 5.6.5. Demonstrates the impact of relaxing shift boundary constraints (10h to 12h) on wait times.

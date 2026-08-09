@@ -1,0 +1,66 @@
+{
+    "scenario_id": {
+        "baseline": "baseline",
+        "extended_shift": "extended_shift"
+    },
+    "orders_processed": {
+        "baseline": 99281,
+        "extended_shift": 99281,
+        "absolute_change": 0,
+        "percentage_change": 0.0
+    },
+    "mean_flow_time": {
+        "baseline": 21901.68433376568,
+        "extended_shift": 15839.859246692915,
+        "absolute_change": -6061.825087072764,
+        "percentage_change": -27.677437929864094
+    },
+    "median_flow_time": {
+        "baseline": 19561.569701774,
+        "extended_shift": 4958.99951373,
+        "absolute_change": -14602.570188044,
+        "percentage_change": -74.64927616069441
+    },
+    "p95_flow_time": {
+        "baseline": 51452.340475774,
+        "extended_shift": 43373.863803082,
+        "absolute_change": -8078.476672691999,
+        "percentage_change": -15.700892511382836
+    },
+    "p99_flow_time": {
+        "baseline": 115805.1964448556,
+        "extended_shift": 76731.43584845155,
+        "absolute_change": -39073.76059640404,
+        "percentage_change": -33.74093891806512
+    },
+    "mean_processing_time": {
+        "baseline": 798.0341921310945,
+        "extended_shift": 798.1357947817974,
+        "absolute_change": 0.10160265070283003,
+        "percentage_change": 0.012731616227057546
+    },
+    "mean_waiting_time": {
+        "baseline": 21103.6501407828,
+        "extended_shift": 15041.723451160726,
+        "absolute_change": -6061.926689622074,
+        "percentage_change": -28.724541248470576
+    },
+    "sla_achievement_percentage": {
+        "baseline": 100.0,
+        "extended_shift": 100.0,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    },
+    "sla_breach_count": {
+        "baseline": 0,
+        "extended_shift": 0,
+        "absolute_change": 0,
+        "percentage_change": 0
+    },
+    "total_simulation_time": {
+        "baseline": 62055671.157791,
+        "extended_shift": 62055671.157791,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    }
+}
