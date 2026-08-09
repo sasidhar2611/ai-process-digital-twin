@@ -1,7 +1,10 @@
 # Decisions Log
 
+## Module 6.2
+- Created the Streamlit multipage app foundation and Baseline Overview page.
+- Exclusively relied on dashboard CSV datasets instead of raw or synthetic event Parquet files to improve app portability and speed.
+
 ## Module 6.1
-- Built a dashboard preparation ETL script to flatten complex JSON/Parquet analytics into lightweight CSVs.
 - Converted seconds to hours for human-readable flow/wait time metrics.
 - Preserved deterministic outputs without running the synthetic engine.
 
