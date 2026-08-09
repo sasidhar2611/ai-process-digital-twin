@@ -6,6 +6,10 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 5.6.2
+- Executed the `picking_plus_5` scenario evaluating the impact of increasing Picking capacity from 15 to 20 workers.
+- Addressed whether massive upstream capacity increases effectively relieve downstream bottlenecks or simply shift congestion further down the process pipeline.
+
 ## Module 5.6.1
 - Executed the `dispatch_plus_1` scenario evaluating the impact of increasing Dispatch capacity from 3 to 4 workers.
 - Concluded the model hypothesis was strongly supported: adding one dispatch worker significantly reduced dispatch queues and subsequently improved overall flow times.

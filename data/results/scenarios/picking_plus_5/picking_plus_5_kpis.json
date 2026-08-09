@@ -1,0 +1,13 @@
+{
+    "scenario_id": "picking_plus_5",
+    "orders_processed": 99281,
+    "mean_flow_time": 21903.202733506416,
+    "median_flow_time": 19500.908852039,
+    "p95_flow_time": 51524.340096213,
+    "p99_flow_time": 116556.31301618858,
+    "mean_processing_time": 798.0847710382197,
+    "mean_waiting_time": 21105.11796157414,
+    "sla_achievement_percentage": 100.0,
+    "sla_breach_count": 0,
+    "total_simulation_time": 62055671.157791
+}
