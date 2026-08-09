@@ -23,6 +23,7 @@
 - **Module 5.6.3**: Packing Capacity What-If Experiment (+2) [IMPLEMENTED / TESTED]
 - **Module 5.6.4**: Productivity Factor What-If Experiment (+10%) [IMPLEMENTED / TESTED]
 - **Module 5.6.5**: Extended Shift What-If Experiment (10h to 12h) [IMPLEMENTED / TESTED]
+- **Module 5.7**: Formal Bottleneck Analysis & Intervention Ranking [IMPLEMENTED / TESTED]
 
 PLAN -> IMPLEMENT ONE MODULE -> TEST -> DOCUMENT -> REVIEW -> COMMIT -> PUSH TO GITHUB -> VERIFY -> STOP.
 Every completed module has a meaningful Git commit and is pushed to GitHub. Raw datasets are explicitly excluded from GitHub.

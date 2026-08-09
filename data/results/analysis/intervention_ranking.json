@@ -1,0 +1,39 @@
+{
+    "ranking": [
+        {
+            "scenario": "extended_shift",
+            "mean_flow_time_improvement_s": 6061.825087072764,
+            "p95_flow_time_improvement_s": 8078.476672691999,
+            "mean_waiting_time_improvement_s": 6061.926689622074,
+            "mean_flow_time_improvement_pct": 27.677437929864094
+        },
+        {
+            "scenario": "dispatch_plus_1",
+            "mean_flow_time_improvement_s": 2484.2777708701906,
+            "p95_flow_time_improvement_s": 1532.5067696459955,
+            "mean_waiting_time_improvement_s": 2484.2777708398608,
+            "mean_flow_time_improvement_pct": 11.342861731598406
+        },
+        {
+            "scenario": "productivity_plus_10",
+            "mean_flow_time_improvement_s": 1307.8264097645806,
+            "p95_flow_time_improvement_s": 778.1259476600026,
+            "mean_waiting_time_improvement_s": 1233.9614702591243,
+            "mean_flow_time_improvement_pct": 5.971350832357278
+        },
+        {
+            "scenario": "packing_plus_2",
+            "mean_flow_time_improvement_s": 1.021141243592865,
+            "p95_flow_time_improvement_s": 4.340703428999404,
+            "mean_waiting_time_improvement_s": 1.011425770844653,
+            "mean_flow_time_improvement_pct": 0.004662386819348768
+        },
+        {
+            "scenario": "picking_plus_5",
+            "mean_flow_time_improvement_s": -1.5183997407366405,
+            "p95_flow_time_improvement_s": -71.9996204390045,
+            "mean_waiting_time_improvement_s": -1.467820791338454,
+            "mean_flow_time_improvement_pct": -0.006932798946406756
+        }
+    ]
+}

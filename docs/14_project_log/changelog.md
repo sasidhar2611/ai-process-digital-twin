@@ -23,3 +23,4 @@
 - Implemented Module 5.6.3 Packing Capacity What-If Experiment. Evaluated adding +2 worker capacity to the Packing stage to measure downstream bottlenecks when adding capacity to a low-utilization stage.
 - Implemented Module 5.6.4 Productivity Factor What-If Experiment. Evaluated a theoretical 10% improvement in worker productivity on stage utilization and flow time.
 - Implemented Module 5.6.5 Extended Shift What-If Experiment. Evaluated the impact of relaxing the daily operating window constraint from 10 hours to 12 hours on initial arrival queuing and overall flow time.
+- Implemented Module 5.7 Formal Bottleneck Analysis & Intervention Ranking. Created a transparent multi-dimensional bottleneck scoring logic and ranked all interventions by their system-level flow-time improvement.

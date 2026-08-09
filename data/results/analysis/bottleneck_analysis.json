@@ -1,0 +1,43 @@
+{
+    "highest_utilization_stage": "DISPATCH",
+    "highest_queue_stage": "DISPATCH",
+    "largest_waiting_contribution_stage": "PROCESSING",
+    "overall_bottleneck_candidate": "DISPATCH",
+    "stage_scores": [
+        {
+            "stage": "DISPATCH",
+            "stage_utilization": 0.3115266031343654,
+            "mean_queue_length": 42.34071977518357,
+            "mean_waiting_time": 4514.577816354106,
+            "bottleneck_score": 3.289871415370067
+        },
+        {
+            "stage": "PROCESSING",
+            "stage_utilization": 0.05556420079870889,
+            "mean_queue_length": 37.303361166789216,
+            "mean_waiting_time": 15574.41533374558,
+            "bottleneck_score": 2.9454649988269117
+        },
+        {
+            "stage": "PICKING",
+            "stage_utilization": 0.10241947425552834,
+            "mean_queue_length": 17.336277837652723,
+            "mean_waiting_time": 603.6624762935809,
+            "bottleneck_score": 1.1946947142166124
+        },
+        {
+            "stage": "PACKING",
+            "stage_utilization": 0.06328510869334004,
+            "mean_queue_length": 0.013416464378884177,
+            "mean_waiting_time": 298.3089098296955,
+            "bottleneck_score": 0.2226157665452443
+        },
+        {
+            "stage": "SORTING",
+            "stage_utilization": 0.041741157553188864,
+            "mean_queue_length": 0.005831931588118572,
+            "mean_waiting_time": 112.68560455983521,
+            "bottleneck_score": 0.1413621032030756
+        }
+    ]
+}
