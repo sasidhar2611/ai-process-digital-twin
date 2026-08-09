@@ -1,0 +1,13 @@
+{
+    "scenario_id": "dispatch_plus_1",
+    "orders_processed": 99281,
+    "mean_flow_time": 19417.40656289549,
+    "median_flow_time": 16805.682890509,
+    "p95_flow_time": 49919.833706128,
+    "p99_flow_time": 72757.7405735752,
+    "mean_processing_time": 798.0341921310945,
+    "mean_waiting_time": 18619.37236994294,
+    "sla_achievement_percentage": 100.0,
+    "sla_breach_count": 0,
+    "total_simulation_time": 62055671.157791
+}

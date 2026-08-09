@@ -6,6 +6,11 @@
 - Decided on strict module-by-module architecture strategy.
 - Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
 
+## Module 5.6.1
+- Executed the `dispatch_plus_1` scenario evaluating the impact of increasing Dispatch capacity from 3 to 4 workers.
+- Concluded the model hypothesis was strongly supported: adding one dispatch worker significantly reduced dispatch queues and subsequently improved overall flow times.
+- Decided to maintain baseline results as strictly read-only and generate independent scenario-specific output structures for safe comparison.
+
 ## Module 5.5
 - Formalized KPI definitions including a configurable SLA assumption (5 Days) to measure operational adherence.
 - Evaluated bottleneck metrics theoretically across the baseline simulation, identifying DISPATCH as the highest utilized stage (31.15%) though heavily constrained overall by shift-wait dynamics.

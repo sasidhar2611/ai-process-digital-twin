@@ -1,0 +1,66 @@
+{
+    "scenario_id": {
+        "baseline": "baseline",
+        "dispatch_plus_1": "dispatch_plus_1"
+    },
+    "orders_processed": {
+        "baseline": 99281,
+        "dispatch_plus_1": 99281,
+        "absolute_change": 0,
+        "percentage_change": 0.0
+    },
+    "mean_flow_time": {
+        "baseline": 21901.68433376568,
+        "dispatch_plus_1": 19417.40656289549,
+        "absolute_change": -2484.2777708701906,
+        "percentage_change": -11.342861731598406
+    },
+    "median_flow_time": {
+        "baseline": 19561.569701774,
+        "dispatch_plus_1": 16805.682890509,
+        "absolute_change": -2755.886811264998,
+        "percentage_change": -14.088270283417348
+    },
+    "p95_flow_time": {
+        "baseline": 51452.340475774,
+        "dispatch_plus_1": 49919.833706128,
+        "absolute_change": -1532.5067696459955,
+        "percentage_change": -2.9784976844106175
+    },
+    "p99_flow_time": {
+        "baseline": 115805.1964448556,
+        "dispatch_plus_1": 72757.7405735752,
+        "absolute_change": -43047.4558712804,
+        "percentage_change": -37.17230071949219
+    },
+    "mean_processing_time": {
+        "baseline": 798.0341921310945,
+        "dispatch_plus_1": 798.0341921310945,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    },
+    "mean_waiting_time": {
+        "baseline": 21103.6501407828,
+        "dispatch_plus_1": 18619.37236994294,
+        "absolute_change": -2484.2777708398608,
+        "percentage_change": -11.77179186665436
+    },
+    "sla_achievement_percentage": {
+        "baseline": 100.0,
+        "dispatch_plus_1": 100.0,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    },
+    "sla_breach_count": {
+        "baseline": 0,
+        "dispatch_plus_1": 0,
+        "absolute_change": 0,
+        "percentage_change": 0
+    },
+    "total_simulation_time": {
+        "baseline": 62055671.157791,
+        "dispatch_plus_1": 62055671.157791,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    }
+}

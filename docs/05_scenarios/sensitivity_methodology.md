@@ -35,3 +35,7 @@ It is critical to distinguish between:
 3. **MODEL PARAMETER**: Theoretical structural definitions (e.g., Lognormal base 300s).
 4. **SCENARIO ASSUMPTION**: Theoretical experimental levers applied (e.g., +5 picking workers).
 5. **EXPERIMENTAL RANGE**: The analytical limits applied to scenario assumptions.
+
+## Executed Scenarios
+- **Baseline**: Module 5.5
+- **Dispatch Capacity +1** (`dispatch_plus_1`): Evaluated in Module 5.6.1. Demonstrates the strict application of OFAT by modifying only the Dispatch worker count.

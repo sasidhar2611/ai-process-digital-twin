@@ -18,3 +18,4 @@
 - Implemented Module 5.3 Synthetic Data Quality & Statistical Validation. Verified 100% structural and temporal integrity of the dataset. Documented expected extreme queues causing 3.20% carrier handover anomaly, mapping strong wait-queue correlations across simulated stages.
 - Implemented Module 5.4 Operational Scenario & Sensitivity Configuration. Designed deterministic configuration framework and registered 6 OFAT (One-Factor-At-A-Time) experimental scenarios based on the validated baseline constraints.
 - Implemented Module 5.5 Baseline Scenario Execution & KPI Extraction. Established core process performance metrics across flow time, SLA, stage utilization, and queuing behaviors for the canonical digital twin baseline.
+- Implemented Module 5.6.1 Dispatch Capacity What-If Experiment. Evaluated adding +1 worker capacity to the Dispatch stage via deterministic simulation, comparing queue and flow-time performance against the operational baseline.

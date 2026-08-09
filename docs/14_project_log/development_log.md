@@ -18,5 +18,7 @@
 - **Module 5.3**: Synthetic Data Quality & Statistical Validation [IMPLEMENTED / TESTED]
 - **Module 5.4**: Operational Scenario & Sensitivity Configuration [IMPLEMENTED / TESTED]
 - **Module 5.5**: Baseline Scenario Execution & KPI Extraction [IMPLEMENTED / TESTED]
+- **Module 5.6.1**: Dispatch Capacity What-If Experiment (+1) [IMPLEMENTED / TESTED]
+
 PLAN -> IMPLEMENT ONE MODULE -> TEST -> DOCUMENT -> REVIEW -> COMMIT -> PUSH TO GITHUB -> VERIFY -> STOP.
 Every completed module has a meaningful Git commit and is pushed to GitHub. Raw datasets are explicitly excluded from GitHub.

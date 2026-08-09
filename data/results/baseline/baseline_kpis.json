@@ -1,0 +1,13 @@
+{
+    "scenario_id": "baseline",
+    "orders_processed": 99281,
+    "mean_flow_time": 21901.68433376568,
+    "median_flow_time": 19561.569701774,
+    "p95_flow_time": 51452.340475774,
+    "p99_flow_time": 115805.1964448556,
+    "mean_processing_time": 798.0341921310945,
+    "mean_waiting_time": 21103.6501407828,
+    "sla_achievement_percentage": 100.0,
+    "sla_breach_count": 0,
+    "total_simulation_time": 62055671.157791
+}
