@@ -1,0 +1,66 @@
+{
+    "scenario_id": {
+        "baseline": "baseline",
+        "packing_plus_2": "packing_plus_2"
+    },
+    "orders_processed": {
+        "baseline": 99281,
+        "packing_plus_2": 99281,
+        "absolute_change": 0,
+        "percentage_change": 0.0
+    },
+    "mean_flow_time": {
+        "baseline": 21901.68433376568,
+        "packing_plus_2": 21900.663192522086,
+        "absolute_change": -1.021141243592865,
+        "percentage_change": -0.004662386819348768
+    },
+    "median_flow_time": {
+        "baseline": 19561.569701774,
+        "packing_plus_2": 19558.574781684,
+        "absolute_change": -2.994920089997322,
+        "percentage_change": -0.015310223748177625
+    },
+    "p95_flow_time": {
+        "baseline": 51452.340475774,
+        "packing_plus_2": 51447.999772345,
+        "absolute_change": -4.340703428999404,
+        "percentage_change": -0.008436357586188322
+    },
+    "p99_flow_time": {
+        "baseline": 115805.1964448556,
+        "packing_plus_2": 115805.19644431218,
+        "absolute_change": -5.434121703729033e-07,
+        "percentage_change": -4.692467929378858e-10
+    },
+    "mean_processing_time": {
+        "baseline": 798.0341921310945,
+        "packing_plus_2": 798.0244766627989,
+        "absolute_change": -0.009715468295667051,
+        "percentage_change": -0.0012174250666782298
+    },
+    "mean_waiting_time": {
+        "baseline": 21103.6501407828,
+        "packing_plus_2": 21102.638715011955,
+        "absolute_change": -1.011425770844653,
+        "percentage_change": -0.004792657971949946
+    },
+    "sla_achievement_percentage": {
+        "baseline": 100.0,
+        "packing_plus_2": 100.0,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    },
+    "sla_breach_count": {
+        "baseline": 0,
+        "packing_plus_2": 0,
+        "absolute_change": 0,
+        "percentage_change": 0
+    },
+    "total_simulation_time": {
+        "baseline": 62055671.157791,
+        "packing_plus_2": 62055671.157791,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    }
+}

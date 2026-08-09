@@ -3,8 +3,9 @@
 ## Module 1
 - Initialized standard repository structure.
 - Created virtual environment and Git repository.
-- Decided on strict module-by-module architecture strategy.
-- Created public GitHub repository and established local-to-remote tracking, ensuring raw datasets are excluded.
+## Module 5.6.3
+- Executed the `packing_plus_2` scenario evaluating the impact of increasing Packing capacity from 10 to 12 workers.
+- Evaluated whether increasing capacity in a stage with very low utilization produces any tangible system-level flow-time improvements.
 
 ## Module 5.6.2
 - Executed the `picking_plus_5` scenario evaluating the impact of increasing Picking capacity from 15 to 20 workers.

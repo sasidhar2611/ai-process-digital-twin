@@ -20,3 +20,4 @@
 - Implemented Module 5.5 Baseline Scenario Execution & KPI Extraction. Established core process performance metrics across flow time, SLA, stage utilization, and queuing behaviors for the canonical digital twin baseline.
 - Implemented Module 5.6.1 Dispatch Capacity What-If Experiment. Evaluated adding +1 worker capacity to the Dispatch stage via deterministic simulation, comparing queue and flow-time performance against the operational baseline.
 - Implemented Module 5.6.2 Picking Capacity What-If Experiment. Evaluated adding +5 worker capacity to the Picking stage to measure upstream relief on downstream queues.
+- Implemented Module 5.6.3 Packing Capacity What-If Experiment. Evaluated adding +2 worker capacity to the Packing stage to measure downstream bottlenecks when adding capacity to a low-utilization stage.

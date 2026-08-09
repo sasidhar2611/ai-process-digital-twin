@@ -1,0 +1,9 @@
+{
+    "scenario_id": "packing_plus_2",
+    "model_version": "1.0.0",
+    "configuration_version": "1.0.0",
+    "random_seed": 42,
+    "source_data_reference": "data/processed/",
+    "execution_timestamp": "2026-08-09T10:03:38.710881+00:00",
+    "sla_definition_seconds": 432000.0
+}

@@ -1,0 +1,13 @@
+{
+    "scenario_id": "packing_plus_2",
+    "orders_processed": 99281,
+    "mean_flow_time": 21900.663192522086,
+    "median_flow_time": 19558.574781684,
+    "p95_flow_time": 51447.999772345,
+    "p99_flow_time": 115805.19644431218,
+    "mean_processing_time": 798.0244766627989,
+    "mean_waiting_time": 21102.638715011955,
+    "sla_achievement_percentage": 100.0,
+    "sla_breach_count": 0,
+    "total_simulation_time": 62055671.157791
+}
