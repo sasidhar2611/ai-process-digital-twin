@@ -1,5 +1,10 @@
 # Decisions Log
 
+## Module 5.8
+- Conducted full architecture review and documentation checkpoint.
+- Formalized Data Lineage rules cleanly separating Real, Derived, Synthetic, and Analytical data.
+- Prepared repository for upcoming Visualization & Deployment phase.
+
 ## Module 1
 - Initialized standard repository structure.
 - Created virtual environment and Git repository.
