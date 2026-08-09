@@ -58,4 +58,4 @@ The system contains a rigorous test suite validating synthetic output logic, sto
 - Stage-to-stage travel times are assumed instant or integrated into base processing.
 
 ## 11. Planned Future Phases
-- **Visualization & Deployment**: Transforming the analytical output Parquet and JSON files into an interactive BI Dashboard (e.g. Streamlit, PowerBI). Currently, no live dashboard or deployment exists.
+- **Visualization & Deployment**: Dashboard-ready analytical datasets are prepared for the upcoming visualization and deployment phase. Transforming the analytical CSV files into an interactive BI Dashboard (e.g. Streamlit, PowerBI). Currently, no live dashboard or deployment exists.

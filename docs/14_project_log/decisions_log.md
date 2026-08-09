@@ -1,7 +1,11 @@
 # Decisions Log
 
+## Module 6.1
+- Built a dashboard preparation ETL script to flatten complex JSON/Parquet analytics into lightweight CSVs.
+- Converted seconds to hours for human-readable flow/wait time metrics.
+- Preserved deterministic outputs without running the synthetic engine.
+
 ## Module 5.8
-- Conducted full architecture review and documentation checkpoint.
 - Formalized Data Lineage rules cleanly separating Real, Derived, Synthetic, and Analytical data.
 - Prepared repository for upcoming Visualization & Deployment phase.
 

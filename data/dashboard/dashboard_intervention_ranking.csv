@@ -1,0 +1,6 @@
+rank,scenario,scenario_label,intervention_category,mean_flow_time_improvement_percent,mean_waiting_time_improvement_percent,p95_flow_time_improvement_percent,bottleneck_effect,hypothesis_result,recommendation_priority
+1,extended_shift,Extended Shift,Process Boundary,27.677437929864094,28.724541440092466,15.700892656567223,Strong system-level wait reduction,SUPPORTED,PRIMARY
+2,dispatch_plus_1,Dispatch +1 Worker,Worker Capacity,11.342861731598406,11.771791945184178,2.9784977119524507,Strong system-level wait reduction,SUPPORTED,SECONDARY
+3,productivity_plus_10,Productivity +10%,Efficiency,5.971350832357278,5.847147153497732,1.5123237303881663,Strong system-level wait reduction,SUPPORTED,LOW
+4,packing_plus_2,Packing +2 Workers,Worker Capacity,0.004662386819348768,0.004792658003921847,0.008436357664198372,Negligible system-level effect,SUPPORTED,LOW
+5,picking_plus_5,Picking +5 Workers,Worker Capacity,-0.006932798946406756,-0.006955293474533808,-0.13993458886224514,Negligible system-level effect,PARTIALLY SUPPORTED,LOW
