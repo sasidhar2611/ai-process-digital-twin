@@ -3,6 +3,11 @@
 ## Module 1
 - Initialized standard repository structure.
 - Created virtual environment and Git repository.
+## Module 5.6.4
+- Fixed productivity utilization mechanism in `generator.py` to ensure `productivity_factor` from config is correctly used as the mean for processing times.
+- Executed the `productivity_plus_10` scenario evaluating the impact of increasing productivity by 10%.
+- Documented how global productivity improvements scale across stages.
+
 ## Module 5.6.3
 - Executed the `packing_plus_2` scenario evaluating the impact of increasing Packing capacity from 10 to 12 workers.
 - Evaluated whether increasing capacity in a stage with very low utilization produces any tangible system-level flow-time improvements.

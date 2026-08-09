@@ -21,6 +21,7 @@
 - **Module 5.6.1**: Dispatch Capacity What-If Experiment (+1) [IMPLEMENTED / TESTED]
 - **Module 5.6.2**: Picking Capacity What-If Experiment (+5) [IMPLEMENTED / TESTED]
 - **Module 5.6.3**: Packing Capacity What-If Experiment (+2) [IMPLEMENTED / TESTED]
+- **Module 5.6.4**: Productivity Factor What-If Experiment (+10%) [IMPLEMENTED / TESTED]
 
 PLAN -> IMPLEMENT ONE MODULE -> TEST -> DOCUMENT -> REVIEW -> COMMIT -> PUSH TO GITHUB -> VERIFY -> STOP.
 Every completed module has a meaningful Git commit and is pushed to GitHub. Raw datasets are explicitly excluded from GitHub.

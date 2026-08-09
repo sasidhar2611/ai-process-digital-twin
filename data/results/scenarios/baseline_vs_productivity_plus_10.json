@@ -1,0 +1,66 @@
+{
+    "scenario_id": {
+        "baseline": "baseline",
+        "productivity_plus_10": "productivity_plus_10"
+    },
+    "orders_processed": {
+        "baseline": 99281,
+        "productivity_plus_10": 99281,
+        "absolute_change": 0,
+        "percentage_change": 0.0
+    },
+    "mean_flow_time": {
+        "baseline": 21901.68433376568,
+        "productivity_plus_10": 20593.8579240011,
+        "absolute_change": -1307.8264097645806,
+        "percentage_change": -5.971350832357278
+    },
+    "median_flow_time": {
+        "baseline": 19561.569701774,
+        "productivity_plus_10": 18076.689109616,
+        "absolute_change": -1484.8805921579988,
+        "percentage_change": -7.590804903674668
+    },
+    "p95_flow_time": {
+        "baseline": 51452.340475774,
+        "productivity_plus_10": 50674.214528114,
+        "absolute_change": -778.1259476600026,
+        "percentage_change": -1.512323716403879
+    },
+    "p99_flow_time": {
+        "baseline": 115805.1964448556,
+        "productivity_plus_10": 92618.2773631378,
+        "absolute_change": -23186.919081717802,
+        "percentage_change": -20.022347695562182
+    },
+    "mean_processing_time": {
+        "baseline": 798.0341921310945,
+        "productivity_plus_10": 724.1692526330763,
+        "absolute_change": -73.8649394980182,
+        "percentage_change": -9.255861493950158
+    },
+    "mean_waiting_time": {
+        "baseline": 21103.6501407828,
+        "productivity_plus_10": 19869.688670523676,
+        "absolute_change": -1233.9614702591243,
+        "percentage_change": -5.847147114491317
+    },
+    "sla_achievement_percentage": {
+        "baseline": 100.0,
+        "productivity_plus_10": 100.0,
+        "absolute_change": 0.0,
+        "percentage_change": 0.0
+    },
+    "sla_breach_count": {
+        "baseline": 0,
+        "productivity_plus_10": 0,
+        "absolute_change": 0,
+        "percentage_change": 0
+    },
+    "total_simulation_time": {
+        "baseline": 62055671.157791,
+        "productivity_plus_10": 62055566.820087,
+        "absolute_change": -104.33770400285721,
+        "percentage_change": -0.00016813564668014674
+    }
+}

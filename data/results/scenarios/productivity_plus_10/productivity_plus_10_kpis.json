@@ -1,0 +1,13 @@
+{
+    "scenario_id": "productivity_plus_10",
+    "orders_processed": 99281,
+    "mean_flow_time": 20593.8579240011,
+    "median_flow_time": 18076.689109616,
+    "p95_flow_time": 50674.214528114,
+    "p99_flow_time": 92618.2773631378,
+    "mean_processing_time": 724.1692526330763,
+    "mean_waiting_time": 19869.688670523676,
+    "sla_achievement_percentage": 100.0,
+    "sla_breach_count": 0,
+    "total_simulation_time": 62055566.820087
+}

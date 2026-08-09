@@ -41,3 +41,4 @@ It is critical to distinguish between:
 - **Dispatch Capacity +1** (`dispatch_plus_1`): Evaluated in Module 5.6.1. Demonstrates the strict application of OFAT by modifying only the Dispatch worker count.
 - **Picking Capacity +5** (`picking_plus_5`): Evaluated in Module 5.6.2. Demonstrates OFAT isolation by exclusively expanding Picking worker count.
 - **Packing Capacity +2** (`packing_plus_2`): Evaluated in Module 5.6.3. Demonstrates OFAT isolation by exclusively expanding Packing worker count.
+- **Productivity +10%** (`productivity_plus_10`): Evaluated in Module 5.6.4. Demonstrates global efficiency improvement on existing constraints.

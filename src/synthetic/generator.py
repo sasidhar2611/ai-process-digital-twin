@@ -143,8 +143,8 @@ class SyntheticDataGenerator:
                 wait = (start - arr).total_seconds()
                 
                 # Productivity
-                # Mean 1.0, slightly varied
-                prod_factor = np.clip(np.random.normal(1.0, 0.1), 0.5, 1.5)
+                # Mean determined by config, slightly varied
+                prod_factor = np.clip(np.random.normal(self.config.productivity_factor, 0.1), 0.5, 1.5)
                 
                 # Base processing time & Drivers
                 base_time = stage_config.base_processing_seconds
