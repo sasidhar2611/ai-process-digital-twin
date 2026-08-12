@@ -28,6 +28,7 @@
 - **Module 6.1**: Dashboard Data Preparation [IMPLEMENTED / TESTED]
 - **Module 6.2**: Streamlit Dashboard Foundation & Overview [IMPLEMENTED / TESTED]
 - **Module 6.3**: Scenario Comparison & What-If Analysis [IMPLEMENTED / TESTED]
+- **Module 6.4**: Bottleneck Analysis Dashboard [IMPLEMENTED / TESTED]
 
 PLAN -> IMPLEMENT ONE MODULE -> TEST -> DOCUMENT -> REVIEW -> COMMIT -> PUSH TO GITHUB -> VERIFY -> STOP.
 Every completed module has a meaningful Git commit and is pushed to GitHub. Raw datasets are explicitly excluded from GitHub.
