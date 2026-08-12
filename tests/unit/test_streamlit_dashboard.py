@@ -1,4 +1,12 @@
 import pytest
+try:
+    import streamlit as st
+    HAS_STREAMLIT = True
+except ImportError:
+    HAS_STREAMLIT = False
+
+pytestmark = pytest.mark.skipif(not HAS_STREAMLIT, reason="streamlit not installed")
+
 from app.data_loader import (
     load_kpis,
     load_stage_metrics,
