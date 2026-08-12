@@ -18,9 +18,10 @@ To run the application locally in a clean environment:
    python -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
-3. Install dependencies:
+3. Install dependencies. The project separates runtime dependencies from development/simulation dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements.txt      # For dashboard runtime only
+   pip install -r requirements-dev.txt  # For simulation and testing
    ```
 4. Run the Streamlit application:
    ```bash
@@ -60,3 +61,8 @@ The application does not require any runtime environment variables, API keys, or
 ## Limitations
 - The deployment ONLY hosts the visualization layer. It does not re-run the heavy Monte Carlo simulations or synthetic generations.
 - To update the simulation, you must generate the new scenario CSVs locally, commit them to GitHub, and Streamlit Cloud will automatically update the dashboard.
+
+## Dependency Considerations
+The project explicitly separates Streamlit runtime dependencies (`requirements.txt`) from development and simulation dependencies (`requirements-dev.txt`).
+- **Streamlit Community Cloud uses `requirements.txt`**, which intentionally excludes test libraries (`pytest`) and heavy C++ simulation binaries (`pyarrow>=19.0`, `scipy`). This guarantees fast and reliable cloud builds regardless of the target Python environment.
+- **Local simulation/development uses `requirements-dev.txt`**, which installs the full test suite and heavy parquet/scientific processors.
