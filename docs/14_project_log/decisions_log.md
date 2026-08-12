@@ -1,5 +1,12 @@
 # Decisions Log
 
+## Module 7
+- Deployment uses Streamlit Community Cloud / standard Streamlit execution rather than Docker because the project is a static-data-driven Streamlit dashboard and Docker provides no necessary functionality for the current deployment target.
+
+## Module 6.8
+- Prefixed dashboard pages with `00_`, `01_`, etc., to natively control Streamlit sidebar ordering.
+- Set Executive Summary as the default landing page via `st.switch_page`.
+
 ## Module 6.2
 - Created the Streamlit multipage app foundation and Baseline Overview page.
 - Exclusively relied on dashboard CSV datasets instead of raw or synthetic event Parquet files to improve app portability and speed.

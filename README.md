@@ -57,17 +57,13 @@ The system contains a rigorous test suite validating synthetic output logic, sto
 The dashboard synthesizes all simulated outputs into an interactive decision-support interface.
 
 ### Running Locally
-To launch the dashboard locally without Docker:
+To launch the dashboard locally:
 ```bash
 streamlit run app/streamlit_app.py
 ```
 
-### Running with Docker
-The project includes a production-ready Docker configuration for the dashboard.
-```bash
-docker build -t ai-process-digital-twin .
-docker run --rm -p 8501:8501 ai-process-digital-twin
-```
+### Streamlit Community Cloud
+This project is deployment-ready for Streamlit Community Cloud. Simply deploy the repository and set the main file path to `app/streamlit_app.py`. No Docker or database is required, as the dashboard uses Git-tracked pre-computed data.
 
 ### Dashboard Access
 Once running, the interactive multi-page dashboard will be accessible at: `http://localhost:8501`
