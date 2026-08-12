@@ -53,6 +53,25 @@ The system contains a rigorous test suite validating synthetic output logic, sto
 4. Execute Scenarios: `python scripts/execute_baseline.py`, followed by scenario scripts.
 5. Execute Analysis: `python scripts/run_bottleneck_analysis.py`
 
+## 10. Dashboard & Deployment
+The dashboard synthesizes all simulated outputs into an interactive decision-support interface.
+
+### Running Locally
+To launch the dashboard locally without Docker:
+```bash
+streamlit run app/streamlit_app.py
+```
+
+### Running with Docker
+The project includes a production-ready Docker configuration for the dashboard.
+```bash
+docker build -t ai-process-digital-twin .
+docker run --rm -p 8501:8501 ai-process-digital-twin
+```
+
+### Dashboard Access
+Once running, the interactive multi-page dashboard will be accessible at: `http://localhost:8501`
+
 ## 10. Current Limitations
 - Labor cost, energy usage, and real-world fatigue degradation are not modeled.
 - Stage-to-stage travel times are assumed instant or integrated into base processing.
