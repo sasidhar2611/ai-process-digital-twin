@@ -30,3 +30,4 @@
 - Implemented Module 6.3 Scenario Comparison & What-If Analysis. Created interactive Streamlit visualizations to analyze and compare operational interventions without recalculating synthetic simulation loops.
 - Implemented Module 6.4 Bottleneck Analysis Dashboard. Developed a visual analytical interface distinguishing true active bottlenecks from boundary queue behaviors, and ranked high-ROI theoretical interventions.
 - Implemented Module 6.5 Operational Flow & Process Analysis Dashboard. Designed stage-by-stage wait and processing breakdowns to illustrate the structural differences between shift queuing and active capacity constraints.
+- Implemented Module 6.6 Interactive What-If Simulation Dashboard. Created an interactive scenario exploration interface enabling users to visually compare isolated operational interventions against the canonical baseline without needing to regenerate synthetic boundaries.
